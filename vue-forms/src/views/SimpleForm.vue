@@ -35,20 +35,11 @@
 
 
       <h3>Are pets allowed?</h3>
-      <div>
-        <BaseRadio 
+      <div> 
+        <BaseRadioGroup
           v-model="event.pets"
-          :value="1"
-          label="Yes"
           name="pets"
-        />
-      </div>
-      <div>
-        <BaseRadio 
-          v-model="event.pets"
-          :value="0"
-          label="No"
-          name="pets"
+          :options="petOptions"
         />
       </div>
 
@@ -75,9 +66,8 @@
 </template>
 
 <script>
-import BaseRadio from '../components/BaseRadio.vue'
+
 export default {
-  components: { BaseRadio },
   data () {
     return {
       categories: [
@@ -99,7 +89,11 @@ export default {
           catering: false,
           music: false
         }
-      }
+      },
+      petOptions: [
+        { label: 'Yes', value: 1 },
+        { label: 'No', value: 0 }
+      ]
     }
   }
 }
