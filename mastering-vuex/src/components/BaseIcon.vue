@@ -7,6 +7,8 @@
     </div>
 </template>
     
+
+
 <script>
 export default {
   name: 'Icon',
@@ -23,6 +25,9 @@ export default {
   }
 }
 </script>
+    
+
+
     
 <style scoped>
 .icon-wrapper {

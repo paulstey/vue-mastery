@@ -24,6 +24,10 @@
     </ul>
   </div>
 </template>
+
+
+
+
 <script>
 import EventService from '@/services/EventService.js'
 
@@ -45,6 +49,10 @@ export default {
   }
 }
 </script>
+
+
+
+
 <style scoped>
 .location {
   margin-bottom: 0;
